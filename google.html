@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Search</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:white;
+    text-align:center;
+}
+
+.logo{
+    font-size:80px;
+    font-weight:bold;
+    margin-top:80px;
+}
+
+.logo span:nth-child(1){color:#4285F4;}
+.logo span:nth-child(2){color:#EA4335;}
+.logo span:nth-child(3){color:#FBBC05;}
+.logo span:nth-child(4){color:#4285F4;}
+.logo span:nth-child(5){color:#34A853;}
+.logo span:nth-child(6){color:#EA4335;}
+
+.search-box{
+    margin-top:30px;
+}
+
+input{
+    width:600px;
+    max-width:90%;
+    padding:15px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    font-size:18px;
+    outline:none;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 30px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#f8f9fa;
+}
+
+button:hover{
+    background:#e8e8e8;
+}
+
+#result{
+    display:none;
+    width:70%;
+    margin:40px auto;
+    text-align:left;
+}
+
+
+.link{
+    color:#1a0dab;
+    font-size:28px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.green{
+    color:green;
+    font-size:14px;
+}
+
+video{
+    width:100%;
+    max-width:700px;
+    margin-top:20px;
+    border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="logo">
+<span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+</div>
+
+<div class="search-box">
+
+<input type="text" value="World's Best Best Friend">
+
+<br>
+
+<button onclick="searchGoogle()">Google Search</button>
+
+</div>
+
+<div id="result">
+    <br><br>
+
+<button onclick="location.href='certificate.html'">
+🏆 Claim Your Award 
+    
+</button>
+
+<p class="green">www.bestfriend.com</p>
+
+<a class="link" href="#" onclick="showVideo();return false;">
+🏆 World's Best Best Friend is UMAIR ❤️
+</a>
+
+<br><br>
+
+<p>
+After searching the whole world... 🌍❤️<br>
+Google found only one result...
+<b>UMAIR</b> is the World's Best Best Friend. 🥹💖
+</p>
+
+</div>
+
+<script>
+
+function searchGoogle(){
+    document.getElementById("result").style.display="block";
+}
+
+function showVideo(){
+    document.getElementById("video").style.display="block";
+}
+
+</script>
+
+</body>
+</html>

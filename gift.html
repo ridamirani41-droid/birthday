@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Gift 🎁</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffdbe8,#fff7fa);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.container{
+text-align:center;
+}
+
+h1{
+color:#ff4d7d;
+margin-bottom:40px;
+font-size:38px;
+}
+
+.gifts{
+display:flex;
+gap:35px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.gift{
+width:180px;
+height:220px;
+background:white;
+border-radius:25px;
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+cursor:pointer;
+transition:.35s;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.gift:hover{
+transform:translateY(-15px) scale(1.05);
+}
+
+.gift img{
+width:90px;
+}
+
+.gift p{
+margin-top:15px;
+font-size:22px;
+font-weight:bold;
+color:#555;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎁 Choose Your Surprise 🎁</h1>
+
+<div class="gifts">
+
+<div class="gift" onclick="location.href='letter.html'">
+<img src="images/gift.png">
+<p>Letter</p>
+</div>
+
+<div class="gift" onclick="location.href='gallery.html'">
+<img src="images/gift.png">
+<p>Photos</p>
+</div>
+
+<div class="gift" onclick="location.href='cake.html'">
+<img src="images/gift.png">
+<p>Cake</p>
+</div>
+<div class="gift" onclick="location.href='google.html'">
+    <img src="images/gift.png">
+    <p>Video</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
